@@ -22,7 +22,7 @@ export default defineConfig({
       name:'Chrome',
     use: {
            browserName:'chromium',
-           headless:false,
+           headless:true,
            screenshot:'only-on-failure',//other options are on,off,only-on-failure
            video:'retain-on-failure',//on, off, retain-on-failure,'on-first-retry'
            trace:'retain-on-failure'//on, off, retain-on-failure,'on-first-retry'
@@ -32,7 +32,7 @@ export default defineConfig({
       name:'Firefox',
     use: {
            browserName:'firefox',
-           headless:false,
+           headless:true,
            screenshot:'only-on-failure',//other options are on,off,only-on-failure
            video:'retain-on-failure',//on, off, retain-on-failure,'on-first-retry'
            trace:'retain-on-failure'//on, off, retain-on-failure,'on-first-retry'
@@ -43,7 +43,7 @@ export default defineConfig({
     use: {
            browserName:'chromium',
            channel:'msedge',
-           headless:false,
+           headless:true,
            screenshot:'only-on-failure',//other options are on,off,only-on-failure
            video:'retain-on-failure',//on, off, retain-on-failure,'on-first-retry'
            trace:'retain-on-failure'//on, off, retain-on-failure,'on-first-retry'
@@ -53,7 +53,7 @@ export default defineConfig({
       name:'Safari',
     use: {
            browserName:'webkit',
-           headless:false,
+           headless:true,
            screenshot:'only-on-failure',//other options are on,off,only-on-failure
            video:'retain-on-failure',//on, off, retain-on-failure,'on-first-retry'
            trace:'retain-on-failure'//on, off, retain-on-failure,'on-first-retry'
