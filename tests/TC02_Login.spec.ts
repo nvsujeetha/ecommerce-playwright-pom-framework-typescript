@@ -2,7 +2,7 @@ import {test,expect} from '@playwright/test';
 import {HomePage} from '../pages/HomePage';
 import {LoginPage} from '../pages/LoginPage';
 import {MyAccountPage} from '../pages/MyAccountPage';
-import testData from '../Utils/CloudBerryStoreTestData.json';
+import testData from '../utils/CloudBerryStoreTestData.json';
 type UserRow={username:string,password:string};
 const users=(testData.Sheet1 ?? []) as UserRow[];//type assertion to specify the type of users array. If the test data is empty use a blank array else put it into the UserRow.
 for (const data of users)//object is created for users
